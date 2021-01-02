@@ -14,37 +14,8 @@
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<!-- Masonry JS -->
-
-        <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-
-        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-
-<!-- JavaScript -->
-<script>
-// Init Masonry
-    var $container = $('#container').masonry({
-});   
-
-// Masonry modifications
-    $('.container').masonry({
-        itemSelector: '.item',
-        gutter: 0
-});
-
-// Layout Masonry after each image loads  
-  $container.imagesLoaded().progress( function() {
-  $container.masonry('layout');
-});
-</script>
- 
-<!--DropBox--> 
-<script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="nn0r9eogjncnfgh"></script>
-
-
-
-
-
+        <!--DropBox--> 
+        <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="nn0r9eogjncnfgh"></script>
     </head>
 
     <title>SurfLink</title>
@@ -162,58 +133,6 @@
         .clearfix {
             overflow: auto;
         }
-
-     
-    /* RESPONSIVE ACTIONS 
-        @media only screen 
-        and (min-device-width: 20px)
-        and (max-device-width: 600px)
-        and (-webkit-min-device-pixel-ratio:2) {
-            .topnav a {display: none;}
-            .topnav a.icon {
-                float: left;
-                display: block;
-                font-size: 30px;
-            }
-        }
-        @media only screen
-        and (min-device-width: 20px)
-        and (max-device-width: 600px)
-        and (-webkit-min-device-pixel-ratio:2) {
-            .topnav.responsive {position: fixed;}
-            .topnav.responsive a.icon {
-                right: 0;
-                top: 0;
-                position: fixed;
-                font-size: 30px;
-            }
-            .topnav.responsive a {
-                float: none;
-                display: block;
-                text-align: left;
-                font-size: 30px;
-            }
-        }
-        @media only screen
-        and (min-device-width: 600px)
-        and (max-device-width: 10000px)
-        and (-webkit-min-device-pixel-ratio:.5) {
-
-        }
-        @media only screen 
-        and (min-device-width: 20px)
-        and (max-device-width: 600px)
-        and (-webkit-min-device-pixel-ratio:2) {a
-            .flex-container {
-                display: flex;
-                justify-content: space-between;
-                flex-direction: column;
-            }
-            .flex-item {
-                flex: 0 1 calc(25% - 1em;
-            }      
-        }
-
     </style>
 
     <body>
@@ -264,29 +183,3 @@
 </html>
 
       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
