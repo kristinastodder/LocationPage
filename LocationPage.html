@@ -2,20 +2,25 @@
 <html lang="en">
 
     <head>
+
         <!-- Meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <!--Navigation Bar JS-->
+        <script language="javascript">
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";} 
+                    else {
+                        x.className = "topnav";}
+            }
+        </script>
 
-        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-
-        <!--jQuery-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-        <!--DropBox--> 
+        <!--DropBox JS--> 
         <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="nn0r9eogjncnfgh"></script>
+
     </head>
 
     <title>SurfLink</title>
@@ -47,7 +52,7 @@
             position: fixed;
             top: 0;
             width: 100%;
-            z-index: 4000;
+            z-index: 2;
         }
         .topnav a {
             float: left;
@@ -70,13 +75,10 @@
             float: right;
         }
         .bannerPic {
-            background-image: url("banner.JPG");
-            background-color: rgb(#223366);
-            opacity: 0.9;
+            background-image: url("DSC_3230.JPG");
             background-size: cover;
-            background-repeat: repeat;
             background-position: cover;
-            z-index: 11;
+            z-index: 1;
             background-attachment: fixed;
         }        
         .break {
@@ -96,9 +98,6 @@
             color: rgb(67, 66, 66);
             width: auto;
             height: auto;
-            padding-left: 10%;
-            padding-right: 10%;
-            text-align: center;
         }        
         .footer {
             padding: 20px;
@@ -116,70 +115,39 @@
             color: white;
         }
 
-
-        
-        .item {
-            height: auto;
-
-        }
-        .item.card25 {
-            width: 25%;
-            height: auto;
-        }
-        #container{
-            position: relative;
-            padding: 10%;
-        }
-        .clearfix {
-            overflow: auto;
-        }
     </style>
 
     <body>
+
         <div class="navbar navbar-white navbar-fixed top" role="navigation" id="topPage"></div>
-        <script language="javascript">
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                    if (x.className === "topnav") {
-                        x.className += " responsive";} 
-                    else {
-                        x.className = "topnav";}
-            }
-        </script>
+
         <header>
             <div class="topnav" id="myTopnav">
-             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>                
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>                
                 <a href="index.html">Surf<b>Link</b></a>                
             </div>            
-
         </header>
+
         <div class="bannerPic">
             <div class="bigBreak"></div> 
+            <div class="littleBreak"></div>
         </div>
 
         <div class="whiteBackground" id="info">
             <div class="littleBreak"></div>
-                <h1>Mavericks</h1>   
+                <h1>OCEAN BEACH</h1>   
                 <a href="https://www.dropbox.com/sh/73p7sb5010npqq7/AAA1F2wjZnAbpUA_dJWV4Y0Ka?dl=0" 
                    class="dropbox-embed" data-height="500px">
                     <div class="littleBreak"></div>
                 </a> 
-            <div class="littleBreak"></div>
+            <div class="break"></div>
         </div>
     
-            <div class="footer">
-                <br>
-                © 2020 SurfLink
-            </div>
-
-            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        <div class="footer">
+            <br>
+            © 2020 SurfLink
+        </div>
 
     </body>
+    
 </html>
-
-      
