@@ -141,14 +141,14 @@
         </div>                            
           <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="nn0r9eogjncnfgh"></script> 
           <script type="text/javascript">
+            var element = document.getElementById("folder_container");
             var options = {
                 link: "https://www.dropbox.com/sh/qqrof1qis42b1a0/AAC0r6FDgD_4FzQzDm-ezSFfa?dl=0",
                 folder: {
                     view: "grid"
                 }
             }
-            var element = document.getElementById("folder_container");
-            Dropbox.embed(options, element);
+            Dropbox.embed(element);
             </script>                  
 
         <div class="whiteBackground" id="folder_container">
