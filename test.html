@@ -19,25 +19,7 @@
         </script>
 
         <!--DropBox JS--> 
-        <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="nn0r9eogjncnfgh"></script>
-        <script>
-var element = document.getElementById("myTopnav");
-var options = {
-      // Shared link to Dropbox file
-      link: "https://www.dropbox.com/sh/qqrof1qis42b1a0/AAC0r6FDgD_4FzQzDm-ezSFfa?dl=0",
-      file: {
-        // Sets the zoom mode for embedded files. Defaults to 'best'.
-        zoom: "best" // or "fit"
-      },
-      folder: {
-        // Sets the view mode for embedded folders. Defaults to 'list'.
-        view: "grid" // or "grid"
-        headerSize: "normal" // or "small"
-      }
-    }
-    Dropbox.embed(options, element);
-</script>
-
+        
     </head>
 
     <title>SurfLink</title>
@@ -151,6 +133,25 @@ var options = {
         </div>
 
         <div class="whiteBackground" id="myTopnav">
+            <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="nn0r9eogjncnfgh"></script>
+        <script>
+    var element = document.getElementById("myTopnav");
+    var options = {
+      // Shared link to Dropbox file
+      link: "https://www.dropbox.com/sh/qqrof1qis42b1a0/AAC0r6FDgD_4FzQzDm-ezSFfa?dl=0",
+      file: {
+        // Sets the zoom mode for embedded files. Defaults to 'best'.
+        zoom: "best" // or "fit"
+      },
+      folder: {
+        // Sets the view mode for embedded folders. Defaults to 'list'.
+        view: "grid" // or "grid"
+        headerSize: "normal" // or "small"
+      }
+    }
+    Dropbox.embed(options, element);
+</script>
+
             <div class="littleBreak"></div>
                 <h1>OCEAN BEACH</h1>   
 
