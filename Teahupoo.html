@@ -18,6 +18,9 @@
             }
         </script>
 
+        <!--DropBox JS-->
+        <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="nn0r9eogjncnfgh"></script>
+        
     </head>
 
     <title>Teahupoo</title>
@@ -144,10 +147,22 @@
 
         <div class="whiteBackground">
             <br>       
-            <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="nn0r9eogjncnfgh"></script> 
-            <a href="https://www.dropbox.com/sh/08z9wyqfvhuhpw5/AACaQ5WCRGSptqDku83CShBQa?dl=0" class="dropbox-embed" data-height="700px">
-                <div class="littleBreak"></div>
-            </a>
+            <div class="gallery" id="photo_gallery">
+                <script>
+                    var element = document.getElementById("photo_gallery");
+                    var options = {
+                        link: "https://www.dropbox.com/sh/08z9wyqfvhuhpw5/AACaQ5WCRGSptqDku83CShBQa?dl=0",
+                        file: {
+                        zoom: "best"
+                        },
+                        folder: {
+                        view: "grid", 
+                        headerSize: "normal" 
+                        }
+                    }   
+                    Dropbox.embed(options, element);
+                </script>
+            </div>    
             <br>
         </div>
     
