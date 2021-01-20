@@ -16,20 +16,35 @@
                     else {
                         x.className = "topnav";}
             }
-
-
         </script>
 
-       <script language="javascript">var element = document.getElementById("myTopnav");</script>
-<script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="nn0r9eogjncnfgh"></script>
-
+        <!--DropBox JS--> 
+        <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="nn0r9eogjncnfgh"></script>
 
     </head>
 
     <title>SurfLink</title>
 
     <style>
-        
+        body {
+          color: rgb(67, 66, 66);
+          font-family: "Avenir", Sans-serif;
+          margin: 0;
+        } 
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            font-weight: normal;
+        }
+        h2 {
+            text-align: center;
+            font-size: 18px;
+            font-weight: normal;
+            vertical-align: top;
+            color: #393c45;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
         .topnav {
             background-color: white;
             overflow: hidden;
@@ -56,7 +71,25 @@
         .topnav .icon {
             display: none;
             font-size: 100px;}
-       
+        .signin {
+            float: right;
+        }
+        .bannerPic {
+            background-image: url("bannerOceanBeach.JPG");
+            background-size: 100%;
+            background-position: cover;
+            z-index: 1;
+            background-attachment: fixed;
+        }        
+        .break {
+            padding-bottom: 15%;
+        }
+        .littleBreak {
+            padding-bottom: 10%;
+        }
+        .bigBreak {
+            padding-bottom: 30%;
+        }
         .whiteBackground {
             position: relative;
             bottom: -10px;
@@ -66,13 +99,27 @@
             width: auto;
             height: auto;
         }        
-       
+        .footer {
+            padding: 20px;
+            background-color: #484848;
+            color: white;
+            padding-left: 10%;
+            padding-right: 10%;
+            line-height: 200%;
+            font-weight: normal;
+            vertical-align: top;
+            text-align: left;
+            font-size: 15px;
+        }
+        .footer a {
+            color: white;
+        }
 
     </style>
 
     <body>
 
-       
+        <div class="navbar navbar-white navbar-fixed top" role="navigation" id="topPage"></div>
 
         <header>
             <div class="topnav" id="myTopnav">
@@ -81,27 +128,26 @@
             </div>            
         </header>
 
-        
+        <div class="bannerPic">
+            <div class="bigBreak"></div> 
+            <div class="littleBreak"></div>
+        </div>
 
-
-
-        
         <div class="whiteBackground" id="myTopnav">
-            TEST
-            TEST
-            <br>
- <script>
-  
-   var options = {
+            <div class="littleBreak"></div>
+                <h1>OCEAN BEACH</h1>   
+<script>
+var element = document.getElementById("myTopnav");
+var options = {
       // Shared link to Dropbox file
-      link: "https://www.dropbox.com/sh/qqrof1qis42b1a0/AAC0r6FDgD_4FzQzDm-ezSFfa?dl=0",
+      link: "https://www.dropbox.com/sh/keptcjl08q3wsid/AACui966iXcXPbagCJ2py2L-a?dl=0",
       file: {
         // Sets the zoom mode for embedded files. Defaults to 'best'.
         zoom: "best" // or "fit"
       },
       folder: {
         // Sets the view mode for embedded folders. Defaults to 'list'.
-        view: "grid", // or "grid"
+        view: "list" // or "grid"
         headerSize: "normal" // or "small"
       }
     }
@@ -115,7 +161,7 @@
     
         <div class="footer">
             <br>
-            © 2021 SurfLink
+            © 2020 SurfLink
         </div>
 
     </body>
