@@ -122,6 +122,10 @@
         .footer a {
             color: white;
         }
+        .photo-gallery {
+            data-height="300px"
+            data-width="600px"
+        }
 
     </style>
 
@@ -148,23 +152,22 @@
         <div class="whiteBackground">
             <br>       
             <div id="photo_gallery">
-                <div class="bigBreak"></div>
-            <script>
-                var element = document.getElementById("photo_gallery");
-                var options = {
-                    link: "https://www.dropbox.com/sh/qqrof1qis42b1a0/AAC0r6FDgD_4FzQzDm-ezSFfa?dl=0",
-                    file: {
-                    zoom: "best"
-                    },
-                    folder: {
-                    view: "grid", 
-                    headerSize: "normal" 
-                    }
-                }   
-                Dropbox.embed(options, element);
-            </script>
-                <div class="bigBreak"></div>
-            </div>
+                <script>
+                    var element = document.getElementById("photo_gallery");
+                    var options = {
+                        link: "https://www.dropbox.com/sh/qqrof1qis42b1a0/AAC0r6FDgD_4FzQzDm-ezSFfa?dl=0",
+                        file: {
+                        zoom: "best"
+                        },
+                        folder: {
+                        view: "grid", 
+                        headerSize: "normal" 
+                        }
+                    }   
+                    Dropbox.embed(options, element);
+                </script>
+            </div>    
+            <div class="littleBreak"></div>
             <br>
         </div>
     
