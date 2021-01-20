@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!-- Meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!--Navigation Bar JS-->
+        <script language="javascript">
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";} 
+                    else {
+                        x.className = "topnav";}
+            }
+        </script>
+
+    </head>
+
+    <title>Ocean Beach</title>
+
+    <style>
+        body {
+          color: rgb(67, 66, 66);
+          font-family: "Helvetica", Sans-serif;
+          margin: 0;
+        } 
+        h0 {
+            text-align: center;
+            font-size: 8vw;
+            z-index: 2;
+            color: white;
+            position: relative;
+            font-weight: normal;
+        }   
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            font-weight: normal;
+        }
+        h2 {
+            text-align: center;
+            font-size: 18px;
+            font-weight: normal;
+            vertical-align: top;
+            color: #393c45;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        .topnav {
+            background-color: white;
+            overflow: hidden;
+            display: block;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 3;
+        }
+        .topnav a {
+            float: left;
+            display: block;
+            color: rgb(67, 66, 66);
+            text-align: left;
+            padding: 10px 15px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        .topnav a:hover {
+            background-color: white;
+            color: rgb(67, 66, 66);
+            font-weight: 500;
+        }
+        .topnav .icon {
+            display: none;
+            font-size: 100px;}
+        .upload {
+            float: right;
+        }
+        .bannerPic {
+            background-image: url("bannerOceanBeach.jpg");
+            background-size: cover;
+            background-position: center center;
+            z-index: 1;
+            text-align: center;
+        }        
+        .break {
+            padding-bottom: 15%;
+        }
+        .littleBreak {
+            padding-bottom: 10%;
+        }
+        .bigBreak {
+            padding-bottom: 30%;
+        }
+        .whiteBackground {
+            position: relative;
+            bottom: -10px;
+            background-color: white;
+            color: rgb(67, 66, 66);
+            width: auto;
+            height: auto;
+            text-align: center;
+        }        
+        .footer {
+            padding: 20px;
+            background-color: #484848;
+            color: white;
+            padding-left: 10%;
+            padding-right: 10%;
+            line-height: 200%;
+            font-weight: normal;
+            vertical-align: top;
+            text-align: left;
+            font-size: 15px;
+        }
+        .footer a {
+            color: white;
+        }
+
+    </style>
+
+    <body>
+
+        <div class="navbar navbar-white navbar-fixed top" role="navigation" id="topPage"></div>
+
+        <header>
+            <div class="topnav" id="myTopnav">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>                
+                <a href="index.html"><b>SurfPhotoLink</b></a> 
+                <div class="upload">
+                    <a href="upload.html">Upload</a>
+                </div>
+            </div>            
+        </header>
+
+        <div class="bannerPic">
+            <div class="break"></div>
+            <h0>OCEAN BEACH</h0>
+            <div class="bigBreak" id="folder_container"></div> 
+        </div>                                         
+
+        <div class="whiteBackground">
+            <br>       
+            <div id="db">
+            <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="nn0r9eogjncnfgh"></script>
+            <script>
+        var element = document.getElementById("db");
+        var options = {
+          // Shared link to Dropbox file
+          link: "https://www.dropbox.com/sh/qqrof1qis42b1a0/AAC0r6FDgD_4FzQzDm-ezSFfa?dl=0",
+          file: {
+            // Sets the zoom mode for embedded files. Defaults to 'best'.
+            zoom: "best" // or "fit"
+          },
+          folder: {
+            // Sets the view mode for embedded folders. Defaults to 'list'.
+            view: "grid", // or "grid"
+            headerSize: "normal" // or "small"
+          }
+        }
+        Dropbox.embed(options, element);
+        </script>
+        </div>
+                <div class="littleBreak"></div>
+            </a>
+            <br>
+        </div>
+    
+        <div class="footer">
+            <a href="contact.html">Contact Us</a>
+            <br>
+            © 2021 SurfPhotoLink
+        </div>
+
+    </body>
+    
+</html>
