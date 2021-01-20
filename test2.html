@@ -17,6 +17,9 @@
                         x.className = "topnav";}
             }
         </script>
+        
+        <!--DropBox JS-->
+        <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="nn0r9eogjncnfgh"></script>
 
     </head>
 
@@ -144,26 +147,22 @@
 
         <div class="whiteBackground">
             <br>       
-            <div id="db">
-            <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="nn0r9eogjncnfgh"></script>
+            <div id="photo_gallery">
             <script>
-        var element = document.getElementById("db");
-        var options = {
-          // Shared link to Dropbox file
-          link: "https://www.dropbox.com/sh/qqrof1qis42b1a0/AAC0r6FDgD_4FzQzDm-ezSFfa?dl=0",
-          file: {
-            // Sets the zoom mode for embedded files. Defaults to 'best'.
-            zoom: "best" // or "fit"
-          },
-          folder: {
-            // Sets the view mode for embedded folders. Defaults to 'list'.
-            view: "grid", // or "grid"
-            headerSize: "normal" // or "small"
-          }
-        }
-        Dropbox.embed(options, element);
-        </script>
-        </div>
+                var element = document.getElementById("photo_gallery");
+                var options = {
+                    link: "https://www.dropbox.com/sh/qqrof1qis42b1a0/AAC0r6FDgD_4FzQzDm-ezSFfa?dl=0",
+                    file: {
+                    zoom: "best"
+                    },
+                    folder: {
+                    view: "grid", 
+                    headerSize: "normal" 
+                    }
+                }   
+                Dropbox.embed(options, element);
+            </script>
+            </div>
                 <div class="littleBreak"></div>
             </a>
             <br>
